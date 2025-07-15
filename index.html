@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TripLoka</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="hero">
+            <nav class="navbar">
+                <div class="logo">TripLoka</div>
+
+                <div class="burger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="nav-links" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="diary.html">Diary</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Explore the World</h1>
+                <p class="sub">Stories & moments from every step</p>
+                <blockquote id="travel-quote">"Traveling – it leaves you speechless, then turns you into a storyteller."</blockquote>
+            </div>
+        </header>
+
+        <section class="intro-section">
+            <h2>Welcome to <span class="brand">TripLoka</span></h2>
+            <p>
+                A traveler's haven — TripLoka is where explorers come together to share their journeys, inspire one another, and discover hidden gems across the globe.
+            </p>
+            <p>
+                Whether you're looking for your next trip idea or eager to tell the world about your latest adventure, <strong>TripLoka</strong> is the space made for passionate travelers like you.
+            </p>
+        </section>
+
+        <section class="user-posts">
+            <h2>Latest Trips Shared by Our Community</h2>
+            <div class="post-grid">
+
+                <div class="user-card">
+                    <img src="assets/images/1.jpg" alt="Wales coast">
+                    <div class="card-caption">
+                        <span class="label">TRAVEL</span>
+                        <h3>Why I Just Can't Stop Coming Back to South Pembrokeshire</h3>
+                    </div>
+                </div>
+
+                <div class="user-card">
+                    <img src="assets/images/2.jpg" alt="Sichuan lake">
+                    <div class="card-caption">
+                        <span class="label">TRAVEL</span>
+                        <h3>7 Amazing Day Trips to Take from Chengdu</h3>
+                    </div>
+                </div>
+
+                <div class="user-card">
+                    <img src="assets/images/3.jpg" alt="Utah desert">
+                    <div class="card-caption">
+                        <span class="label">TRAVEL</span>
+                        <h3>Visiting the Cinematic Landscapes of Utah</h3>
+                    </div>
+                </div>
+
+                <div class="user-card">
+                    <img src="assets/images/4.jpg" alt="Kyoto, Japan">
+                    <div class="card-caption">
+                        <span class="label">TRAVEL</span>
+                        <h3>Tranquility in Kyoto’s Bamboo Forest</h3>
+                    </div>
+                </div>
+
+                <div class="user-card">
+                    <img src="assets/images/5.jpg" alt="Mount Bromo">
+                    <div class="card-caption">
+                        <span class="label">TRAVEL</span>
+                        <h3>Chasing Sunrise at Mount Bromo</h3>
+                    </div>
+                </div>
+
+                <div class="user-card">
+                    <img src="assets/images/6.jpg" alt="Rome, Italy">
+                    <div class="card-caption">
+                        <span class="label">TRAVEL</span>
+                        <h3>Walking Through History in Rome</h3>
+                    </div>
+                </div>
+
+                <div class="user-card">
+                    <img src="assets/images/7.jpg" alt="Banff National Park, Canada">
+                    <div class="card-caption">
+                        <span class="label">TRAVEL</span>
+                        <h3>Kayaking Across Emerald Lakes in Banff</h3>
+                    </div>
+                </div>
+
+                <div class="user-card">
+                    <img src="assets/images/8.jpg" alt="Marrakech, Morocco">
+                    <div class="card-caption">
+                        <span class="label">TRAVEL</span>
+                        <h3>Colors and Culture in the Streets of Marrakech</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="show-more">
+                <a href="diary.html" class="btn-show-more">Show More Trips</a>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-column">
+                <h4>Travel Guides</h4>
+                <ul>
+                    <li>Africa</li>
+                    <li>Asia</li>
+                    <li>Europe</li>
+                    <li>North America</li>
+                    <li>South America</li>
+                </ul>
+                </div>
+
+                <div class="footer-column">
+                <h4>The Company</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Our Team</li>
+                    <li>Our App</li>
+                    <li>Sitemap</li>
+                </ul>
+                </div>
+
+                <div class="footer-column">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Threads</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: hello@triploka.com</li>
+                    <li>Support: +62 812 3456 7890</li>
+                    <li>Partners & Ads</li>
+                </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 <strong>TripLoka</strong>. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

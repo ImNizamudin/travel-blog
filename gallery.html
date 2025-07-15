@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery – TripLoka</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="topbar">
+            <div class="logo-topbar">TripLoka</div>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links-topbar" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="diary.html">Diary</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+
+        <main class="gallery-masonry">
+            <h2>Travel Moments Captured</h2>
+
+            <div class="masonry-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery1.jpg" alt="Sunset Beach" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#indonesia #sunset</div>
+                        <div class="uploader">@nizam</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery2.jpg" alt="Mountain Hike" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#hiking #swiss #adventure</div>
+                        <div class="uploader">@hannah</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery3.jpg" alt="Palm Beach" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#bali #beach</div>
+                        <div class="uploader">@david</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery4.jpg" alt="Rice Fields in Ubud" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#bali #ubud #indonesia</div>
+                        <div class="uploader">@amanda</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery5.jpg" alt="Northern Lights in Iceland" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#iceland #northernlights</div>
+                        <div class="uploader">@lucas</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery6.jpg" alt="Camel Caravan in Morocco" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#morocco #sahara #desert</div>
+                        <div class="uploader">@nora</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery7.jpg" alt="Sunset on the Pacific Coast" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#sunset #pacific #california</div>
+                        <div class="uploader">@ryan</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery8.jpg" alt="Street Food in Bangkok" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#thailand #bangkok #foodie</div>
+                        <div class="uploader">@sophia</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery9.jpg" alt="Hot Air Balloons Over Cappadocia" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#turkey #cappadocia #balloon</div>
+                        <div class="uploader">@kevin</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery10.jpg" alt="Floating Market in Vietnam" onclick="openModal(this)">
+                    <div class="gallery-meta">
+                        <div class="tags">#vietnam #floatingmarket #culture</div>
+                        <div class="uploader">@mia</div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img" />
+            <div id="caption"></div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>Travel Guides</h4>
+                    <ul>
+                        <li>Africa</li>
+                        <li>Asia</li>
+                        <li>Europe</li>
+                        <li>North America</li>
+                        <li>South America</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>The Company</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Our Team</li>
+                        <li>Our App</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Threads</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: hello@triploka.com</li>
+                        <li>Support: +62 812 3456 7890</li>
+                        <li>Partners & Ads</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 <strong>TripLoka</strong>. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
