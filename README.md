@@ -76,7 +76,7 @@
 
 ## 📷 Cuplikan Tampilan
   
-> `![Home Page](assets/travel-blog.png)`
+> `![Home Page](assets/images/travel-blog.png)`
 
 ---
 
